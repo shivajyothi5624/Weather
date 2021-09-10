@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-seri;
+}
+
+:root {
+  --primary_color: 6c63ff;
+  --secondary_color: rgb(84, 187, 84);
+  --background_color: rgb(33, 37, 41);
+}
+
+.search_main {
+  position: relative;
+}
+
+#searchbar {
+  position: relative;
+  color: white;
+  display: block;
+  margin: auto;
+  width: 600px;
+  margin-top: 58px;
+  padding: 15px 20px;
+  border-radius: 2rem;
+  outline: none;
+  background: var(--background_color);
+  font-weight: bold;
+}
+
+.searchbtn {
+  background: #8282d0;
+  padding: 0.5rem 1rem;
+  border-radius: 28px;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 324px;
+  top: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.searchbtn:hover {
+  background: white;
+  color: #8282d0;
+}
+
+::placeholder {
+  color: white;
+}
+.icon {
+  font-size: 1.5rem;
+}
+
+.weather_content {
+  color: white;
+  background: var(--background_color);
+  width: 30rem;
+  height: 14rem;
+  margin: auto;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 2.2rem;
+  /*display:flex;
+  align-items:center;
+  justify-content:center;*/
+}
+
+.date_time {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.temp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 3rem;
+  align-items: center;
+}
+
+.inside_weather_content {
+  margin: 7%;
+}
+
+#city_name {
+  font-size: 1rem;
+  padding-left: 58px;
+}
+
+#city_country {
+  padding-left: 48px;
+}
+

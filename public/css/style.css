@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-seri;
+}
+
+:root {
+  --primary_color: 6c63ff;
+  --secondary_color: rgb(84, 187, 84);
+  --background_color: rgb(33, 37, 41);
+}
+
+/* navbar */
+
+.nav_head {
+  background-color: var(--background_color);
+}
+.nav_sub {
+  font-size: 1.3rem;
+}
+#web_name {
+  font-size: 1.7rem;
+}
+
+/* main_content */
+
+.main_content {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+#highlight {
+  color: var(--secondary_color);
+  font-weight: bold;
+}
+#main_text {
+  color: black;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.check-btn {
+  display: block;
+  font-size: 1.5rem;
+  padding: 10px 10px;
+  border-radius: 22px;
+  outline: none;
+  background-color: var(--secondary_color);
+  color: black;
+  width: 145px;
+  font-weight: bold;
+  margin: 0px auto;
+  text-decoration: none;
+  box-shadow: inset 4em 1em rgb(133 133 231);
+}
+
+.check-btn:hover {
+  box-shadow: inset 4em 1em orange;
+  color: black;
+}
+
+/* footer styling */
+footer p {
+  position: fixed;
+  /* display: block; */
+  width: 100%;
+  bottom: -15px;
+  background-color: var(--background_color);
+  text-align: center;
+  color: white;
+}
+
+
+
