@@ -17,7 +17,6 @@ pressent_time = d.getHours()+":"+d.getMinutes();
 search_city.addEventListener("click",(event)=>{
   event.preventDefault();
   let city_name = document.querySelector(".city_name").value;
-  console.log(city_name);
   let url = "https://api.openweathermap.org/data/2.5/weather?q="+city_name+"&units=metric&appid=1782cc971e8d35b98659939e4089d9b5";
   $.ajax({
     type: "GET",
@@ -28,7 +27,6 @@ search_city.addEventListener("click",(event)=>{
       day.innerText = present_day;
       time.innerText = pressent_time;
       let temp = data;
-      console.log(data);
       city_country.innerText = data.name+" "+data.sys.country;
       temperature.innerHTML =  `<p id="temperature">${data.main.temp}<sup>o</sup>C</p>`  
       let nature =data.weather[0].main;
