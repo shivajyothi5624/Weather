@@ -1,4 +1,5 @@
 
+// console.log(process.env.API_KEY);
 const search_city = document.getElementById("search_city");
 const d = new Date();
 const day = document.getElementById("day")
@@ -8,12 +9,11 @@ const temperature = document.getElementById("temperature");
 const weathericon = document.querySelector(".weathericon");
 const searchbar_input = document.getElementById("searchbar");
 
-// time and day
-let dayarr = [ 'monday','tuesday','wednesday','thursday','friday','satirday'];
-present_day = dayarr[d.getDay()];
+let dayarr = [ 'monday','tuesday','wednesday','thursday','friday','saturday','sunday'];
+present_day = dayarr[d.getDay()-1];
 pressent_time = d.getHours()+":"+d.getMinutes();
 
-
+// console.log(process.env.API_KEY);
 search_city.addEventListener("click",(event)=>{
   event.preventDefault();
   let city_name = document.querySelector(".city_name").value;
